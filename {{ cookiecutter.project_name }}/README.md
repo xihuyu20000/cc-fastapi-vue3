@@ -3,7 +3,7 @@
 pip install cookiecutter
 
 从远程模板生成项目 例如，使用 GitHub 上的模板：
-cookiecutter https://github.com/audreyr/cookiecutter-pypackage
+cookiecutter https://github.com/xihuyu20000/cc-fastapi-vue3.git
 
 
 从本地模板生成项目 如果有本地模板：
@@ -19,7 +19,7 @@ cookiecutter /path/to/local/template
 ## 同步环境
 ```shell
 .\.venv\Scripts\activate.bat
-uv sync -i https://pypi.tuna.tsinghua.edu.cn/simple/
+uv sync --active -i https://pypi.tuna.tsinghua.edu.cn/simple/
 ```
 
 ## 初始化数据

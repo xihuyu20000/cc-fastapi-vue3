@@ -3,6 +3,9 @@ __pycache__/
 *.py[oc]
 build/
 dist/
+.idea/
+distvue/
+output/
 wheels/
 *.egg-info
 {{cookiecutter.package_name}}.log
@@ -10,3 +13,4 @@ pytest-report.html
 
 # Virtual environments
 .venv
+
