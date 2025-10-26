@@ -1,0 +1,7 @@
+{
+    "project_name": "ddd",
+    "package_name": "backend",
+    "python_version": "3.13.8",
+    "description": "A short description of the project.",
+    "version": "0.1.0"
+}

@@ -1,0 +1,12 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+{{cookiecutter.package_name}}.log
+pytest-report.html
+
+# Virtual environments
+.venv

@@ -1,0 +1,36 @@
+[project]
+name = "{{cookiecutter.package_name}}"
+version = "{{cookiecutter.version}}"
+description = "{{cookiecutter.description}}"
+readme = "README.md"
+requires-python = ">={{cookiecutter.python_version}}"
+dependencies = [
+    "fastapi[standard]>=0.119.0",
+    "python-multipart>=0.0.20",
+    "sqlalchemy>=2.0.44",
+    "loguru>=0.7.3",
+    "pyjwt>=2.10.1",
+    "auto-py-to-exe>=2.48.1",
+    "python-dotenv>=1.1.1",
+    "passlib>=1.7.4",
+    "argon2-cffi>=25.1.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+    "pytest-html==3.2.0"
+]
+
+[tool.pytest.ini_options]
+addopts = """
+  --log-file={{cookiecutter.package_name}}.log
+  --log-file-level=DEBUG
+  --html=pytest-report.html 
+  --self-contained-html 
+
+  """
+testpaths = [
+    "tests",
+    "integration",
+]
